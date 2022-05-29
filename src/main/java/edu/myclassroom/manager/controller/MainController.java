@@ -3,9 +3,6 @@ package edu.myclassroom.manager.controller;
 import javafx.stage.Stage;
 
 public class MainController {
-
-    public static final double STAGE_WIDTH = 950.0;
-    public static final double STAGE_HEIGHT = 750.0;
     private static MainController mainControllerInstance;
 
     private MainController() {}
@@ -22,6 +19,6 @@ public class MainController {
 
     public void startAppController( Stage stage ) {
         System.out.println( "⇒ Method startAppController call view class to configure stage, set scene in stage and show this." );
-        windowStageController.getSceneControllerInstance( stage, STAGE_WIDTH, STAGE_HEIGHT ).buildApplication();
+        windowStageController.getSceneControllerInstance( stage ).buildApplication();
     }
 }

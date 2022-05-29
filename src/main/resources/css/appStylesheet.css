@@ -1,0 +1,76 @@
+.container {
+    -fx-background-color: #e6e6e6;
+}
+
+.menu-container {
+    -fx-background-color: #19334d;
+}
+
+.cadre-left-menu {
+    -fx-background-color: transparent;
+}
+
+.top-bar {
+    -fx-background-color: #bfbfbf;
+    /*-fx-background-radius: 0px 0px 10px 10px;*/
+}
+
+.menu-logo {
+    -fx-background-color: transparent;
+    -fx-text-fill: WHITE;
+}
+
+.button-menu {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0px 20px 20px 0px;
+}
+
+.button-menu:hover {
+    -fx-background-color: #12273b;
+}
+
+.search-box {
+}
+
+.search-container {
+}
+
+.button-image {
+}
+
+.button-label {
+}
+
+.search-input {
+    -fx-border-color: #12273b;
+    -fx-border-width: 0px 0px 0px 0px;
+    -fx-prompt-text-fill: white;
+}
+
+.button-search {
+    -fx-background-color: transparent;
+    -fx-background-radius: 15%;
+    /*-fx-border-radius: 100%;*/
+}
+
+.button-search:hover {
+    -fx-background-color: #12273b;
+}
+
+.text-field {
+    -fx-border-color: #12273b;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-prompt-text-fill: white;
+    -fx-fill: #4080bf;
+    -fx-highlight-text-fill: white;
+    -fx-highlight-fill: #9dbee1;
+    -fx-tick-label-fill: #4080bf;
+}
+
+.text-field:focused {
+    -fx-border-color: #12273b;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-prompt-text-fill: #4080bf;
+    -fx-text-fill: #12273b;
+}

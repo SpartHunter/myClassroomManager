@@ -9,9 +9,14 @@ module edu.myclassroom.manager {
 
     requires com.jfoenix;
     requires MaterialFX;
+    requires com.gluonhq.charm.glisten;
+    requires com.gluonhq.attach.util;
 
     requires org.joda.time;
     requires lombok;
 
     exports edu.myclassroom.manager;
+    exports edu.myclassroom.manager.controller to javafx.fxml;
+
+    opens edu.myclassroom.manager.controller to javafx.fxml;
 }
