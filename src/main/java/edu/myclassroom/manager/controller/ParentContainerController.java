@@ -5,6 +5,7 @@ import com.gluonhq.charm.glisten.control.BottomNavigationButton;
 import edu.myclassroom.manager.model.ManagementEntity;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
 
 public class ParentContainerController {
     @FXML
@@ -19,4 +20,10 @@ public class ParentContainerController {
     private BottomNavigationButton faqMenuButton;
     @FXML
     private Button searchButton;
+    @FXML
+    private AnchorPane customContent;
+    @FXML
+    private AnchorPane formContent;
+    @FXML
+    private AnchorPane tableContent;
 }
