@@ -1,0 +1,68 @@
+.title-panel {
+    -fx-background-color: #0c1a27;
+    -fx-border-width: 2px;
+    -fx-border-radius: 2px;
+    -fx-border-color: #12273b;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #19334d;
+    -fx-border-color: #19334d;
+    -fx-border-width: 0px 0px 0px 0px;
+    -fx-min-height: 45px;
+    -fx-max-height: 45px;
+}
+
+.table-view .column-header-background .label {
+    -fx-background-color: #19334d;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-family: "Cooper Black";
+    -fx-border-color: white;
+    -fx-border-width: 0px 1px 1px 0px;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-radius: 150px 0px 20px 0px;
+    -fx-border-width: 0px 1px 1px 0px;
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+}
+
+.table-row-cell {
+    -fx-background-color: #bfbfbf;
+    -fx-font-size: 14px;
+    -fx-font-family: "Dubai";
+    -fx-font-weight: bold;
+    -fx-cell-size: 40px;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #999999;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-font-size: 14px;
+    -fx-font-family: "Dubai";
+    -fx-font-weight: bold;
+    -fx-cell-size: 40px;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #0c1a27;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.column-header-action {
+    -fx-min-height: 50px;
+    -fx-max-height: 50px;
+}
+
+.table-view .column-header-background .column-header-action .no-right-border .label {
+    -fx-border-width: 0px 0px 1px 0px;
+}

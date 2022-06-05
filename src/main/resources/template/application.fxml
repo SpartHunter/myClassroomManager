@@ -9,7 +9,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.*?>
-<AnchorPane id="window" nodeOrientation="LEFT_TO_RIGHT" styleClass="container" stylesheets="@../css/appStylesheet.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.myclassroom.manager.controller.ParentContainerController">
+<?import java.net.URL?>
+<AnchorPane id="window" nodeOrientation="LEFT_TO_RIGHT" style="-fx-background-color: transparent;" styleClass="container" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.myclassroom.manager.controller.ParentContainerController">
     <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1200.0" styleClass="main-border" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <left>
             <VBox alignment="CENTER" spacing="95.0" styleClass="menu-container" BorderPane.alignment="CENTER">
@@ -50,7 +51,7 @@
                             </ImageView>
                             <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="124.0" styleClass="button-label" text="CLASSROOM" textFill="WHITE">
                                 <font>
-                                    <Font name="Copperplate Gothic Bold" size="13.0"/>
+                                    <Font name="Cooper Black" size="14.0"/>
                                 </font>
                                 <cursor>
                                     <Cursor fx:constant="HAND"/>
@@ -96,7 +97,7 @@
                             </ImageView>
                             <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="124.0" styleClass="button-label" text="TEACHER" textFill="WHITE">
                                 <font>
-                                    <Font name="Copperplate Gothic Bold" size="13.0"/>
+                                    <Font name="Cooper Black" size="14.0"/>
                                 </font>
                                 <cursor>
                                     <Cursor fx:constant="HAND"/>
@@ -142,7 +143,7 @@
                             </ImageView>
                             <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="124.0" styleClass="button-label" text="BOOKING" textFill="WHITE">
                                 <font>
-                                    <Font name="Copperplate Gothic Bold" size="13.0"/>
+                                    <Font name="Cooper Black" size="14.0"/>
                                 </font>
                                 <cursor>
                                     <Cursor fx:constant="HAND"/>
@@ -188,7 +189,7 @@
                             </ImageView>
                             <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="124.0" styleClass="button-label" text="FAQ" textFill="WHITE">
                                 <font>
-                                    <Font name="Copperplate Gothic Bold" size="13.0"/>
+                                    <Font name="Cooper Black" size="14.0"/>
                                 </font>
                                 <cursor>
                                     <Cursor fx:constant="HAND"/>
@@ -281,9 +282,11 @@
             </BorderPane>
         </top>
         <center>
-            <AnchorPane BorderPane.alignment="CENTER">
-                <GridPane hgap="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="718.0" prefWidth="1068.0" styleClass="app-body" vgap="2.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <AnchorPane style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+                <GridPane id="bodyGrid" fx:id="bodyGrid" hgap="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="718.0" prefWidth="1068.0" style="-fx-background-color: transparent;" styleClass="app-body" vgap="2.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
@@ -292,15 +295,20 @@
                     </columnConstraints>
                     <rowConstraints>
                         <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
                     </rowConstraints>
-                    <AnchorPane id="formContent" fx:id="formContent" GridPane.columnSpan="3" GridPane.rowSpan="2"/>
-                    <AnchorPane id="customContent" fx:id="customContent" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowSpan="2"/>
-                    <AnchorPane id="tableContent" fx:id="tableContent" GridPane.columnSpan="5" GridPane.rowIndex="2" GridPane.rowSpan="2"/>
                 </GridPane>
             </AnchorPane>
         </center>
     </BorderPane>
+    <stylesheets>
+        <URL value="@../css/appStylesheet.css"/>
+        <URL value="@../css/reboot.css"/>
+    </stylesheets>
 </AnchorPane>

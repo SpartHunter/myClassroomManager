@@ -6,7 +6,10 @@ import edu.myclassroom.manager.model.ManagementEntity;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
+import lombok.Data;
 
+@Data
 public class ParentContainerController {
     @FXML
     private AutoCompleteTextField <ManagementEntity> searchInput;
@@ -26,4 +29,6 @@ public class ParentContainerController {
     private AnchorPane formContent;
     @FXML
     private AnchorPane tableContent;
+    @FXML
+    private GridPane bodyGrid;
 }

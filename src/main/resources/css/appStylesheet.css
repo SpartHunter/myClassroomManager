@@ -12,7 +12,6 @@
 
 .top-bar {
     -fx-background-color: #bfbfbf;
-    /*-fx-background-radius: 0px 0px 10px 10px;*/
 }
 
 .menu-logo {
@@ -52,33 +51,10 @@
 .button-search {
     -fx-background-color: transparent;
     -fx-background-radius: 15%;
-    /*-fx-border-radius: 100%;*/
 }
 
 .button-search:hover {
     -fx-background-color: #12273b;
-}
-
-.text-field {
-    -fx-background-color: #bfbfbf;
-    -fx-border-color: #12273b;
-    -fx-border-width: 0px 0px 3px 0px;
-    -fx-prompt-text-fill: #bfbfbf;
-    -fx-fill: #4080bf;
-    -fx-highlight-text-fill: white;
-    -fx-highlight-fill: #9dbee1;
-    -fx-tick-label-fill: #4080bf;
-    -fx-font-size: 1.04em;
-    -fx-font-family: "Cooper Black";
-}
-
-.text-field:focused {
-    -fx-border-color: #12273b;
-    -fx-border-width: 0px 0px 3px 0px;
-    -fx-prompt-text-fill: #4080bf;
-    -fx-text-fill: #12273b;
-    -fx-focus-color: transparent;
-    -fx-faint-focus-color: transparent;
 }
 
 .main-border {
@@ -87,8 +63,4 @@
 
 .app-body {
     -fx-background-color: transparent;
-}
-
-.app-body Line {
-    -fx-stroke: red;
 }

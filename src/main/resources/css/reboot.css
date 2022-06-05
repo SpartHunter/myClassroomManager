@@ -1,0 +1,29 @@
+.text-field, .combo-box {
+    -fx-background-color: #bfbfbf;
+    -fx-border-color: #12273b;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-prompt-text-fill: #bfbfbf;
+    -fx-fill: #4080bf;
+    -fx-highlight-text-fill: white;
+    -fx-highlight-fill: #9dbee1;
+    -fx-tick-label-fill: #4080bf;
+    -fx-font-size: 1.04em;
+    -fx-font-family: "Cooper Black";
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.text-field:focused,
+.combo-box:focused {
+    -fx-border-color: #12273b;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-prompt-text-fill: #4080bf;
+    -fx-text-fill: #12273b;
+    -fx-fill: #4080bf;
+    -fx-highlight-text-fill: white;
+    -fx-highlight-fill: #9dbee1;
+    -fx-tick-label-fill: #4080bf;
+    -fx-focus-color: transparent;
+    -fx-font-size: 1.04em;
+    -fx-faint-focus-color: transparent;
+}
