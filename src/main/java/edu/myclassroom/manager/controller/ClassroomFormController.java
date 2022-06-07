@@ -10,7 +10,7 @@ import lombok.Data;
 import org.controlsfx.control.CheckComboBox;
 
 @Data
-public class ClassroomController {
+public class ClassroomFormController {
     @FXML
     private TextField classroomName;
     @FXML

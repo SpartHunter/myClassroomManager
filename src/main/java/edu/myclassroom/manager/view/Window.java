@@ -4,5 +4,4 @@ public interface Window {
     void bootstrapStageOfApp();
 
     void showAppStage();
-
 }

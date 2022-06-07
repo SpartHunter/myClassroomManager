@@ -4,7 +4,7 @@ import com.gluonhq.charm.glisten.control.BottomNavigationButton;
 import lombok.Data;
 
 @Data
-public class ClassroomTableButton {
+public class ClassroomRegisterButton {
     private int id;
     private BottomNavigationButton Delete;
     private BottomNavigationButton modify;

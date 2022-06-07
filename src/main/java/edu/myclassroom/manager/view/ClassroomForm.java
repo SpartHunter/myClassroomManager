@@ -1,6 +1,6 @@
 package edu.myclassroom.manager.view;
 
-import edu.myclassroom.manager.controller.ClassroomController;
+import edu.myclassroom.manager.controller.ClassroomFormController;
 import edu.myclassroom.manager.utility.LoadResources;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.BorderPane;
@@ -10,11 +10,18 @@ import java.io.IOException;
 public class ClassroomForm {
 
     private static ClassroomForm classroomFormInstance;
+    private final BorderPane borderPane;
     private final FXMLLoader fxmlLoader = new FXMLLoader(
             new LoadResources( "/template/classroomForm.fxml" ).getResourcesAsUrl()
     );
 
-    private ClassroomForm() {}
+    private ClassroomForm() {
+        try {
+            this.borderPane = this.fxmlLoader.load();
+        } catch ( IOException e ) {
+            throw new RuntimeException( e );
+        }
+    }
 
     public static ClassroomForm buildClassroomForm() {
         if ( classroomFormInstance == null ) {
@@ -25,14 +32,10 @@ public class ClassroomForm {
     }
 
     public BorderPane getClassroomFormInstance() {
-        try {
-            return this.fxmlLoader.load();
-        } catch ( IOException e ) {
-            throw new RuntimeException( e );
-        }
+        return this.borderPane;
     }
 
-    public ClassroomController getClassroomControler() {
+    public ClassroomFormController getClassroomFormControler() {
         return this.fxmlLoader.getController();
     }
 }

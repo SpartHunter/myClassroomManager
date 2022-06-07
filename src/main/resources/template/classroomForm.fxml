@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import org.controlsfx.control.CheckComboBox?>
 <?import java.net.URL?>
-<BorderPane prefHeight="358.0" prefWidth="645.0" styleClass="classroomForm" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.myclassroom.manager.controller.ClassroomController">
+<BorderPane prefHeight="358.0" prefWidth="645.0" styleClass="classroomForm" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.myclassroom.manager.controller.ClassroomFormController">
     <stylesheets>
         <URL value="@../css/classroomForm.css"/>
         <URL value="@../css/reboot.css"/>

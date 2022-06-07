@@ -18,11 +18,16 @@ public class WindowImpl implements Window {
     public void bootstrapStageOfApp() {
         this.stage.setTitle( this.title );
         this.stage.setScene( this.scene );
+        this.stage.setResizable( false );
+        this.stage.setFullScreen( false );
+        this.stage.setMaxHeight( 850.0 );
+        this.stage.setMaxWidth( 1220.0 );
+        this.stage.setMinHeight( 850.0 );
+        this.stage.setMinWidth( 1220.0 );
     }
 
     @Override
     public void showAppStage() {
         this.stage.show();
     }
-
 }

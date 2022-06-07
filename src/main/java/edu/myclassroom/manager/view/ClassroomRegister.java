@@ -9,12 +9,19 @@ import java.io.IOException;
 
 public class ClassroomRegister {
     private static ClassroomRegister classroomRegister;
+    private final StackPane stackPane;
     private final FXMLLoader fxmlLoader = new FXMLLoader(
             new LoadResources( "/template/classroomRegister.fxml" ).getResourcesAsUrl() );
 
-    private ClassroomRegister() {}
+    private ClassroomRegister() {
+        try {
+            stackPane = this.fxmlLoader.load();
+        } catch ( IOException e ) {
+            throw new RuntimeException( e );
+        }
+    }
 
-    public static ClassroomRegister buildClassroomTable() {
+    public static ClassroomRegister buildClassroomRegister() {
         if ( classroomRegister == null ) {
             classroomRegister = new ClassroomRegister();
         }
@@ -22,12 +29,8 @@ public class ClassroomRegister {
         return classroomRegister;
     }
 
-    public StackPane getClassroomTable() {
-        try {
-            return fxmlLoader.load();
-        } catch ( IOException e ) {
-            throw new RuntimeException( e );
-        }
+    public StackPane getClassroomRegisterInstance() {
+        return this.stackPane;
     }
 
     public ClassroomRegisterController getClassroomRegisterController() {

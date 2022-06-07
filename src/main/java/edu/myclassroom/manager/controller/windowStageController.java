@@ -7,15 +7,13 @@ import javafx.stage.Stage;
 
 public class windowStageController {
     private static windowStageController windowStageControllerInstance;
-    private final static String appTitle = "CLASSROOM MANAGEMENT";
-    private final Stage stage;
-    private final ParentContainer parentContainer;
+    private final static String APP_TITLE = "CLASSROOM MANAGEMENT";
+    ParentContainer parentContainer;
     private final Window primaryWindow;
 
     private windowStageController( Stage stage ) {
-        this.parentContainer = ParentContainer.buildParentContainer();
-        this.primaryWindow = new WindowImpl( stage, this.parentContainer.getSceneInstance(), appTitle );
-        this.stage = stage;
+        parentContainer = ParentContainer.buildParentContainer();
+        this.primaryWindow = new WindowImpl( stage, parentContainer.getSceneInstance(), APP_TITLE );
     }
 
     public static windowStageController getSceneControllerInstance( Stage stage ) {
@@ -26,8 +24,16 @@ public class windowStageController {
         return windowStageControllerInstance;
     }
 
+    public static windowStageController getSceneControllerInstance() {
+        return windowStageControllerInstance;
+    }
+
     public void buildApplication() {
         this.primaryWindow.bootstrapStageOfApp();
         this.primaryWindow.showAppStage();
+    }
+
+    public ParentContainer getParentContainer() {
+        return parentContainer;
     }
 }
