@@ -15,48 +15,48 @@ public class ClassroomModel {
     private List <BookingModel> booking;
 
     public static List <ClassroomModel> defaultClassroomList() {
-        ClassroomModel model1 = new ClassroomModel();
-        ClassroomModel model2 = new ClassroomModel();
-        ClassroomModel model3 = new ClassroomModel();
-        ClassroomModel model4 = new ClassroomModel();
-        ClassroomModel model5 = new ClassroomModel();
+        ClassroomModel classroom1 = new ClassroomModel();
+        ClassroomModel classroom2 = new ClassroomModel();
+        ClassroomModel classroom3 = new ClassroomModel();
+        ClassroomModel classroom4 = new ClassroomModel();
+        ClassroomModel classroom5 = new ClassroomModel();
 
-        model1.setId( 1 );
-        model2.setId( 2 );
-        model3.setId( 3 );
-        model4.setId( 4 );
-        model5.setId( 5 );
+        classroom1.setId( 1 );
+        classroom2.setId( 2 );
+        classroom3.setId( 3 );
+        classroom4.setId( 4 );
+        classroom5.setId( 5 );
 
-        model1.setName( "model1" );
-        model2.setName( "model2" );
-        model3.setName( "model3" );
-        model4.setName( "model4" );
-        model5.setName( "model5" );
+        classroom1.setName( "classroom1" );
+        classroom2.setName( "classroom2" );
+        classroom3.setName( "classroom3" );
+        classroom4.setName( "classroom4" );
+        classroom5.setName( "classroom5" );
 
-        model1.setSeatsNumber( 10 );
-        model2.setSeatsNumber( 5 );
-        model3.setSeatsNumber( 20 );
-        model4.setSeatsNumber( 40 );
-        model5.setSeatsNumber( 15 );
+        classroom1.setSeatsNumber( 10 );
+        classroom2.setSeatsNumber( 5 );
+        classroom3.setSeatsNumber( 20 );
+        classroom4.setSeatsNumber( 40 );
+        classroom5.setSeatsNumber( 15 );
 
-        model1.setType( ClassroomType.CHIMIE );
-        model2.setType( ClassroomType.PROFS );
-        model3.setType( ClassroomType.CAFETERIA );
-        model4.setType( ClassroomType.INFORMATIQUE );
-        model5.setType( ClassroomType.INFIRMERIE );
+        classroom1.setType( ClassroomType.CHIMIE );
+        classroom2.setType( ClassroomType.PROFS );
+        classroom3.setType( ClassroomType.CAFETERIA );
+        classroom4.setType( ClassroomType.INFORMATIQUE );
+        classroom5.setType( ClassroomType.INFIRMERIE );
 
-        model1.setEquipment( Arrays.asList( ClassroomEquipment.TABLES, ClassroomEquipment.CHAISES, ClassroomEquipment.MICROSCOPE ) );
-        model2.setEquipment( Arrays.asList( ClassroomEquipment.TABLES, ClassroomEquipment.CHAISES, ClassroomEquipment.BUREAU ) );
-        model3.setEquipment( Arrays.asList( ClassroomEquipment.TABLES, ClassroomEquipment.CHAISES ) );
-        model4.setEquipment( Arrays.asList( ClassroomEquipment.TABLES, ClassroomEquipment.CHAISES, ClassroomEquipment.SOURIS, ClassroomEquipment.CLAVIERS ) );
-        model5.setEquipment( Arrays.asList( ClassroomEquipment.TABLES, ClassroomEquipment.CHAISES, ClassroomEquipment.LIT ) );
+        classroom1.setEquipment( Arrays.asList( ClassroomEquipment.TABLES, ClassroomEquipment.CHAISES, ClassroomEquipment.MICROSCOPE ) );
+        classroom2.setEquipment( Arrays.asList( ClassroomEquipment.TABLES, ClassroomEquipment.CHAISES, ClassroomEquipment.BUREAU ) );
+        classroom3.setEquipment( Arrays.asList( ClassroomEquipment.TABLES, ClassroomEquipment.CHAISES ) );
+        classroom4.setEquipment( Arrays.asList( ClassroomEquipment.TABLES, ClassroomEquipment.CHAISES, ClassroomEquipment.SOURIS, ClassroomEquipment.CLAVIERS ) );
+        classroom5.setEquipment( Arrays.asList( ClassroomEquipment.TABLES, ClassroomEquipment.CHAISES, ClassroomEquipment.LIT ) );
 
-        model1.setBooking( null );
-        model2.setBooking( null );
-        model3.setBooking( null );
-        model4.setBooking( null );
-        model5.setBooking( null );
+        classroom1.setBooking( null );
+        classroom2.setBooking( null );
+        classroom3.setBooking( null );
+        classroom4.setBooking( null );
+        classroom5.setBooking( null );
 
-        return Arrays.asList( model1, model2, model3, model4, model5 );
+        return Arrays.asList( classroom1, classroom2, classroom3, classroom4, classroom5 );
     }
 }
