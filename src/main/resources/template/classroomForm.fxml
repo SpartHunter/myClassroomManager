@@ -134,7 +134,7 @@
                 </HBox>
             </AnchorPane>
             <AnchorPane layoutX="445.0" layoutY="165.0" prefHeight="52.0" prefWidth="87.0" styleClass="field-pane" GridPane.columnIndex="4" GridPane.rowIndex="6">
-                <Button id="saveClassroom" fx:id="saveClassroom" contentDisplay="CENTER" layoutX="1.0" layoutY="5.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="85.0" styleClass="save-classroom" text="SAVE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <Button id="saveClassroom" fx:id="saveClassroom" contentDisplay="CENTER" layoutX="1.0" layoutY="5.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="85.0" styleClass="save-classroom" text="SAVE" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <font>
                         <Font name="Cooper Black" size="20.0"/>
                     </font>

@@ -57,6 +57,7 @@
     -fx-background-color: rgba(0, 0, 0, 0.5);
     -fx-font-size: 1.04em;
     -fx-font-family: "Cooper Black";
+    -fx-text-fill: white;
 }
 
 .save-classroom:hover {
@@ -64,4 +65,5 @@
     -fx-background-color: rgba(255, 255, 255, 0.8);
     -fx-font-size: 1.04em;
     -fx-font-family: "Cooper Black";
+    -fx-text-fill: #0c1a27;
 }
