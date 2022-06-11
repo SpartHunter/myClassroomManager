@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.BottomNavigationButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<BottomNavigationButton fx:id="buttonBooking" prefHeight="60.0" prefWidth="68.0" selected="true" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.myclassroom.manager.controller.BookingButtonController">
+
+    <graphic>
+        <ImageView fitHeight="54.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" translateX="7.0">
+            <Image url="@../images/buttonBooking.png"/>
+        </ImageView>
+    </graphic>
+
+</BottomNavigationButton>

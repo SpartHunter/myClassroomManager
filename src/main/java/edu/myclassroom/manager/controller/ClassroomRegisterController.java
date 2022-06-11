@@ -4,7 +4,7 @@ import com.gluonhq.charm.glisten.control.BottomNavigationButton;
 import edu.myclassroom.manager.model.ClassroomEquipment;
 import edu.myclassroom.manager.model.ClassroomRegisterModel;
 import edu.myclassroom.manager.model.ClassroomType;
-import edu.myclassroom.manager.view.ClassroomRegisterButton;
+import edu.myclassroom.manager.view.RegisterButton;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -24,11 +24,11 @@ public class ClassroomRegisterController {
     @FXML
     private TableColumn <Integer, ClassroomRegisterModel> classroomSeats;
     @FXML
-    private TableColumn <BottomNavigationButton, ClassroomRegisterButton> classroomBooking;
+    private TableColumn <BottomNavigationButton, RegisterButton> classroomBooking;
     @FXML
-    private TableColumn <BottomNavigationButton, ClassroomRegisterButton> classroomModify;
+    private TableColumn <BottomNavigationButton, RegisterButton> classroomModify;
     @FXML
-    private TableColumn <BottomNavigationButton, ClassroomRegisterButton> classroomDelete;
+    private TableColumn <BottomNavigationButton, RegisterButton> classroomDelete;
 
     public void addItems( ClassroomRegisterModel classroomRegisterModel ) {
         if ( !classroomTableView.getItems().contains( classroomRegisterModel ) ) {

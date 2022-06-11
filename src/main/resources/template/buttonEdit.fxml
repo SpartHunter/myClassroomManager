@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.BottomNavigationButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<BottomNavigationButton fx:id="buttonEdit" prefHeight="60.0" prefWidth="68.0" selected="true" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.myclassroom.manager.controller.EditButtonController">
+    <graphic>
+        <ImageView fitHeight="54.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" translateX="6.0">
+            <Image url="@../images/edit.png"/>
+        </ImageView>
+    </graphic>
+
+</BottomNavigationButton>

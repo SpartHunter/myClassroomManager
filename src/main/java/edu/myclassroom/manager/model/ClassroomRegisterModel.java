@@ -1,7 +1,7 @@
 package edu.myclassroom.manager.model;
 
 import com.gluonhq.charm.glisten.control.BottomNavigationButton;
-import edu.myclassroom.manager.view.ClassroomRegisterButton;
+import edu.myclassroom.manager.view.RegisterButton;
 import lombok.Data;
 
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.List;
 @Data
 public class ClassroomRegisterModel {
     private ClassroomModel classroomModel;
-    private ClassroomRegisterButton classroomRegisterButton;
+    private RegisterButton registerButton;
     private int classroomId;
     private String name;
     private int seatsNumber;
@@ -19,14 +19,14 @@ public class ClassroomRegisterModel {
     private BottomNavigationButton modify;
     private BottomNavigationButton booking;
 
-    public ClassroomRegisterModel( ClassroomModel classroomModel, ClassroomRegisterButton classroomRegisterButton ) {
+    public ClassroomRegisterModel( ClassroomModel classroomModel, RegisterButton registerButton ) {
         this.classroomId = classroomModel.getId();
         this.name = classroomModel.getName();
         this.seatsNumber = classroomModel.getSeatsNumber();
         this.type = classroomModel.getType();
         this.equipment = classroomModel.getEquipment();
-        this.Delete = classroomRegisterButton.getDelete();
-        this.modify = classroomRegisterButton.getModify();
-        this.booking = classroomRegisterButton.getBooking();
+        this.Delete = registerButton.getDelete();
+        this.modify = registerButton.getModify();
+        this.booking = registerButton.getBooking();
     }
 }

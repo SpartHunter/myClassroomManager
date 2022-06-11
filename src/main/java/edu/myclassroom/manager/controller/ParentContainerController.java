@@ -4,6 +4,7 @@ import com.gluonhq.charm.glisten.control.AutoCompleteTextField;
 import com.gluonhq.charm.glisten.control.BottomNavigationButton;
 import edu.myclassroom.manager.model.ManagementEntity;
 import edu.myclassroom.manager.view.ClassroomPage;
+import edu.myclassroom.manager.view.TeacherPage;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -38,6 +39,7 @@ public class ParentContainerController implements Initializable {
     @FXML
     private AnchorPane body;
     private GridPane classroomPage = ClassroomPage.buildClassroomPage().getClassroomPageInstance();
+    private GridPane teacherPage = TeacherPage.buildTeacherPage().getTeacherPageInstance();
 
     @Override
     public void initialize( URL url, ResourceBundle resourceBundle ) {
@@ -51,6 +53,7 @@ public class ParentContainerController implements Initializable {
 
     @FXML
     private void goToTeacherPage( ActionEvent actionEvent ) {
+        this.getBody().getChildren().setAll( this.teacherPage );
     }
 
     @FXML

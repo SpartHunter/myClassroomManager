@@ -5,7 +5,7 @@ import javafx.scene.layout.GridPane;
 import lombok.Data;
 
 @Data
-public class ClassroomPageController {
+public class GridContainer {
     @FXML
     private GridPane bodyGrid;
 }

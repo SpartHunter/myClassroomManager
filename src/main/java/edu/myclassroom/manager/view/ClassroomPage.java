@@ -1,7 +1,7 @@
 package edu.myclassroom.manager.view;
 
-import edu.myclassroom.manager.controller.ClassroomPageController;
 import edu.myclassroom.manager.controller.ClassroomRegisterController;
+import edu.myclassroom.manager.controller.GridContainer;
 import edu.myclassroom.manager.model.ClassroomModel;
 import edu.myclassroom.manager.model.ClassroomRegisterModel;
 import edu.myclassroom.manager.utility.LoadResources;
@@ -16,7 +16,7 @@ public class ClassroomPage {
     private static ClassroomPage classroomPageInstance;
     private final GridPane gridpane;
     private final FXMLLoader fxmlLoader = new FXMLLoader(
-            new LoadResources( "/template/classroomPage.fxml" ).getResourcesAsUrl()
+            new LoadResources( "/template/gridContainer.fxml" ).getResourcesAsUrl()
     );
 
     private ClassroomPage() {
@@ -36,21 +36,20 @@ public class ClassroomPage {
     }
 
     public GridPane getClassroomPageInstance() {
-        ClassroomPageController classroomPageController = this.fxmlLoader.getController();
+        GridContainer gridContainer = this.fxmlLoader.getController();
         BorderPane classroomForm = ClassroomForm.buildClassroomForm().getClassroomFormInstance();
         StackPane classroomRegister = ClassroomRegister.buildClassroomRegister().getClassroomRegisterInstance();
         ClassroomRegisterController registerController = ClassroomRegister.buildClassroomRegister().getClassroomRegisterController();
 
         for ( ClassroomModel defaultClassroom : ClassroomModel.defaultClassroomList() ) {
-            ClassroomRegisterButton button = new ClassroomRegisterButton();
-            button.setId( defaultClassroom.getId() );
+            RegisterButton button = new RegisterButton( defaultClassroom.getId() );
             ClassroomRegisterModel registerModel = new ClassroomRegisterModel( defaultClassroom, button );
             registerController.addItems( registerModel );
         }
 
         try {
-            classroomPageController.getBodyGrid().add( classroomForm, 1, 0, 5, 2 );
-            classroomPageController.getBodyGrid().add( classroomRegister, 0, 2, 7, 7 );
+            gridContainer.getBodyGrid().add( classroomForm, 1, 0, 5, 2 );
+            gridContainer.getBodyGrid().add( classroomRegister, 0, 2, 7, 7 );
         } catch ( IllegalArgumentException e ) {
             return this.gridpane;
         }
@@ -59,7 +58,7 @@ public class ClassroomPage {
 
     }
 
-    public ClassroomPageController getClassroomPageController() {
+    public GridContainer getClassroomPageController() {
         return fxmlLoader.getController();
     }
 }
