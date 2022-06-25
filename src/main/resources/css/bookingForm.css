@@ -1,0 +1,69 @@
+.bookingForm {
+    -fx-background-color: #0c1a27;
+}
+
+.booking-title {
+    -fx-text-fill: #bfbfbf;
+}
+
+.title-divider {
+    -fx-background-color: #bfbfbf;
+}
+
+.field-pane {
+    -fx-background-radius: 7px;
+}
+
+.text-field, .combo-box {
+    -fx-background-color: transparent !important;
+    -fx-border-color: transparent !important;
+}
+
+.combo-box > .list-cell {
+    -fx-text-fill: grey !important;
+    -fx-prompt-text-fill: grey !important;
+}
+
+.combo-box:focused > .list-cell {
+    -fx-text-fill: white !important;
+    -fx-prompt-text-fill: grey !important;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: rgba(255, 255, 255, 0.2) !important;
+    -fx-border-color: white !important;
+    -fx-text-fill: white !important;
+}
+
+.text-field:focused, .combo-box:focused {
+    -fx-prompt-text-fill: white !important;
+    -fx-text-fill: white !important;
+}
+
+.input-border {
+    -fx-border-width: 0px 0px 3px 0px !important;
+    -fx-border-color: white;
+}
+
+.booking-text-field, .booking-combo-box {
+}
+
+.booking-text-field:focused, .booking-combo-box:focused {
+
+}
+
+.save-booking {
+    -fx-background-radius: 8px;
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -fx-font-size: 1.04em;
+    -fx-font-family: "Cooper Black";
+    -fx-text-fill: white;
+}
+
+.save-booking:hover {
+    -fx-background-radius: 8px;
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-font-size: 1.04em;
+    -fx-font-family: "Cooper Black";
+    -fx-text-fill: #0c1a27;
+}
